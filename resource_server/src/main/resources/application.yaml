@@ -1,3 +1,12 @@
 spring:
   application:
     name: resource_server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8448/realms/oauth2-demos
+
+
+server:
+  port: 8082
